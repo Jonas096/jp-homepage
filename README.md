@@ -9,12 +9,22 @@ docker compose exec php chown -R www-data:www-data storage bootstrap/cache
 ## Dockerbefehle
 
 
-Docker ausführen
+Composer ausführen
 ~~~
 docker compose run --rm composer install
 ~~~
 
-Docker Container ausführen
+Migrate durchführen
 ~~~
 docker compose exec app php artisan migrate
+~~~
+
+Npm install durchführen
+~~~
+docker compose run --rm composer install
+~~~
+
+Vite dev starten
+~~~
+docker compose run --rm npm run dev
 ~~~
