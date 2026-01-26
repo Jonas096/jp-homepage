@@ -21,7 +21,7 @@ docker compose exec app php artisan migrate
 
 Npm install durchführen
 ~~~
-docker compose run --rm composer install
+docker compose run --rm npm install
 ~~~
 
 Vite dev starten
