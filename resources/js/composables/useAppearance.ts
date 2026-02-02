@@ -77,6 +77,7 @@ export function initializeTheme(): void {
 
     // Initialize theme from saved preference or default to system...
     const savedAppearance = getStoredAppearance();
+    console.log('Saved appearance:', savedAppearance);
     updateTheme(savedAppearance || 'system');
 
     // Set up system theme change listener...
